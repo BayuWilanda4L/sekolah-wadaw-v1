@@ -4,3 +4,6 @@ Aplikasi web ini dibuat dengan menggunakan :
 - CSS dan CSS3
 - PHP
 - MySQL
+ 
+
+*Masih dalam tahap pengerjaan*
