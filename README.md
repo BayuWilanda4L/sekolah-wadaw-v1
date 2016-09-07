@@ -9,4 +9,4 @@ Aplikasi web ini dibuat dengan menggunakan :
 *Masih dalam tahap pengerjaan*
 Terimakasih Kepada :
 - <a href='https://github.com/IanLunn'>Ian Lunn</a>; dan
-- <a href='https://github.com/drygiel'>Damian Drygiel</a>
+- <a href='https://github.com/drygiel'>Damian Drygiel</a> yang telah membuat web sederhana ini sedikit lebih menarik.
