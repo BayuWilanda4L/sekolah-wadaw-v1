@@ -3,87 +3,45 @@
 		<title>SMAN 1 Wadaw</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
         <link href="css/hover.css" rel="stylesheet" type="text/css" />
-		<link href="css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+        <link rel="stylesheet" href="css/cssslider.css" />
 	</head>
 	<body>
 		<div id='container'>
 			<div id='header'><h1><center><br><a href=''>SMAN 1 WADAW</a></center></h1></div>
-			<!--MULAI DARI SINI-->
-			<div id="slider">            
-                <div id="one" class="contentslider">
-                    <div class="cs_wrapper">
-                        <div class="cs_slider">                        
-                            <div class="cs_article">                            	
-                                <div class="left">
-                                    <?php
-                                        include "koneksi.php";
-                                        $query=mysql_query("SELECT * FROM artikel WHERE id='7'");
-                                        while($var=mysql_fetch_array($query)){
-                                        echo "<h2>$var[judul]</h2>";
-                                        echo "<p>$var[deskripsi]</p>";
-                                        echo "<div class='button'>
-                                        <a href='artikel.php?id=$var[id]'>[Read More]</a>
-                                        </div>";
-
-                                        }
-                                    ?>
-                                    
-                                    
-                               		</div>
-                                	<div class="right">
-                               		<a href="#" target="_blank"><img src="images/slider/templatemo_slide02.jpg" alt="Template 1" /></a>
-									</div>
-                                                                
-                            </div><!-- End cs_article -->
-                            
-                            <div class="cs_article">
-                                <div class="left">
-                                    <h2>Judul Ke2</h2>
-                                    <p>blup blup blupp blupp </p>
-                                    
-                                    <div class="button"><a href="#" target="_blank">[Read more]</a></div>
-                               	</div>
-                                <div class="right">
-                                <a href="#" target="_parent"><img src="images/slider/templatemo_slide01.jpg" alt="Template 2" /></a>
-                                </div>
-                            </div><!-- End cs_article -->
-                            
-                            <div class="cs_article">
-                                <div class="left">
-                                    <h2>Judul Artikel Ke-2</h2>
-                                    <p>blup blup blup </p>                                   
-                                    <div class="button"><a href="#" target="_blank">Read more</a></div>
-                               	</div>
-                                <div class="right">
-                                <a href="#" target="_blank"><img src="images/slider/templatemo_slide04.jpg" alt="Template 4" /></a>
-                                </div>
-                            </div><!-- End cs_article -->
-                      
-                        </div><!-- End cs_slider -->
-                    </div><!-- End cs_wrapper -->
-                </div><!-- End contentslider -->
-                
-                <!-- Site JavaScript -->
-                <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
-                <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-                <script type="text/javascript" src="js/jquery.ennui.contentslider.js"></script>
-                <script type="text/javascript">
-                    $(function() {
-                    $('#one').ContentSlider({
-                    width : '920px',
-                    height : '200px',
-                    speed : 800,
-                    easing : 'easeInOutBack'
-                    });
-                    });
-                </script>
-                <script src="js/jquery.chili-2.2.js" type="text/javascript"></script>
-                <script src="js/chili/recipes.js" type="text/javascript"></script>
-                <div class="cleaner"></div>
-   </div>
-</div>
-       <!-- SAMPE SINI -->
-
+                <center>
+                    <div class="csslider">
+                    <input type="radio" name="slides" id="slides_1" checked />
+                    <input type="radio" name="slides" id="slides_2" />
+                    <input type="radio" name="slides" id="slides_3" />
+                    <input type="radio" name="slides" id="slides_4" />
+                    <input type="radio" name="slides" id="slides_N" />
+                    <ul>
+                        <li>Content of slide 1</li>
+                        <li>Content of slide 2</li>
+                        <li>Content of slide 3</li>
+                        <li>Content of slide 4</li>
+                        <li>Content of slide N</li>
+                    </ul>
+                <div class="arrows">
+                    <label for="slides_1"></label>
+                    <label for="slides_2"></label>
+                    <label for="slides_3"></label>
+                    <label for="slides_4"></label>
+                    <label for="slides_N"></label>
+                    <label for="slides_1" class="goto-first"></label>
+                    <label for="slides_N" class="goto-last"></label>
+                </div>
+                <div class="navigation">
+                    <div>
+                        <label for="slides_1"></label>
+                        <label for="slides_2"></label>
+                        <label for="slides_3"></label>
+                        <label for="slides_4"></label>
+                        <label for="slides_N"></label>
+                    </div>
+                </div>
+            </div>
+        </center>
 
 
 			<div id='navigasi'>
@@ -104,12 +62,12 @@
                 
             </div>
 			<div id='kanan'><center><h3>SIDEBAR</h3></center><hr>
-                <ul class="slider">
-                <li><a href="#"><img src="slider/images/01.jpg" alt="Slide 1"></a></li>
-                <li><a href="#"><img src="slider/images/02.jpg" alt="Slide 2"></a></li>
-                <li><a href="#"><img src="slider/images/03.jpg" alt="Slide 3"></a></li>
-                <li><a href="#"><img src="slider/images/04.jpg" alt="Slide 4"></a></li>
-                </ul>
+                <center><ul class="sidebar">
+                <li><a href="#" class='hvr-wobble-horizontal'>Menu 1</a></li>
+                <li><a href="#" class='hvr-wobble-horizontal'>Menu 2</a></li>
+                <li><a href="#" class='hvr-wobble-horizontal'>Menu 3</a></li>
+                <li><a href="#" class='hvr-wobble-horizontal'>Menu 4</a></li>
+                </ul></center>
             </div>   
             </div>
 			<div id='footer'><center><br><br><br><br><br><br>Designed By : Muhamad Bayu Wilanda</a><p>2016</center></div>
