@@ -21,6 +21,7 @@
 				<a href='/sekolah-bayu' class='hvr-back-pulse'>Lihat Website</a><br>
 			</div>
 		</div>
+		<!-- Di rekomendasikan menggunakan include agar dapat konsisten jika mempunyai banyak page -->
 		<div id='kiri'>
 			<center><h3>Pokoknya disini Sidebar</h3></center><hr>
 				<center><ul>
